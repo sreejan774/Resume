@@ -1,0 +1,282 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%--------------------
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Sreejan Sourav} \\ \vspace{1pt}  \vspace{5mm}
+    \small \raisebox{-0.1\height}\faPhone\ +91-9871454596 ~ \href{mailto:sreejansourav774@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{sreejansourav774@gmail.com}} ~ 
+    \href{https://linkedin.com/in/sreejan774/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/sreejan774}}  ~
+    \href{https://github.com/sreejan774/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/sreejan774/}}
+    \vspace{-8pt}
+\end{center}
+
+\vspace{3 mm}
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bharati Vidyapeeth's College Of Engineering}{Aug. 2018 -- Aug. 2022}
+      {Bachelor of Technology (Computer Science Engineering)}{New Delhi, India}
+      \resumeItem{CGPA : 8.1}
+  
+    \resumeSubheading
+      {Rajakiya Pratibha Vikas Vidyalaya}{Mar. 2016 -- Apr. 2017}
+      {Senior Secondary}{New Delhi, India} 
+      \resumeItem{Percentage : 93.4\%}
+    
+    \resumeSubheading
+      {R.K. Govt. Sarvodaya Bal Vidyalaya}{Mar. 2014 -- Apr. 2015}
+      {Secondary}{New Delhi, India}
+      \resumeItem{CGPA : 9.4}
+  \resumeSubHeadingListEnd
+
+
+
+%------RELEVANT COURSEWORK-------
+%\section{Skills}
+%    %\resumeSubHeadingListStart
+%        \begin{multicols}{4}
+%            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                \item\small Data Structures
+%                \item Software Methodology
+%                \item Algorithms Analysis
+%                \item Database Management
+%                \item Artificial Intelligence
+%                \item Internet Technology
+%                \item Systems Programming
+%                \item Computer Architecture
+%            \end{itemize}
+%        \end{multicols}
+%        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{TRAINING AND INTERNSHIPS}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {\href{https://drive.google.com/file/d/1NbSZ7Sc94mQQYgusM16lynYyAZOVulUe/view}{Teaching Assistant (Internship) \ExternalLink }}{Oct, 2020 -- Jan, 2021}
+        {Coding Ninjas}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Teaching Assistant for the course Basics of Competitive Programming.}
+        \resumeItem{Helped the students clearing their doubts and debugging their codes mainly written in C++.}
+        \resumeItem{Helped students in their assignments and various projects.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {\href{https://drive.google.com/file/d/1x1Sl4qxDAReoSUDnk907K_k1JSozkMKB/view}{Summer Trainee \ExternalLink}}{June 2020 -- July 2020}
+        {Coding Ninjas}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Underwent training in competitive programming.}
+        \resumeItem{Completed the four weeks course along with the project.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+\vspace{2 mm}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/sreejan774/Fuzzy-Expert-System}{Expert System For Breast Cancer Detection \ExternalLink}} $|$ \emph{Python, Tkinter, Fuzzy Logic Toolbox}}{Nov. 2020}
+          \resumeItemListStart
+            \resumeItem{Implemented an Expert System for detection of Breast Cancer based on a knowledge based system.}
+            \resumeItem{Used WBCD dataset and implemented the rule base of the system using Decision tree. }
+            \resumeItem{Designed a user-friendly interface using Python Tkinter package.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/sreejan774/Covileer}{Covileer \ExternalLink}} $|$ \emph{Python, Django, HTML, CSS}}{May 2021 - Present}
+          \resumeItemListStart
+            \resumeItem{Developed a web based application which provides the volunteer services related to delivery to Covid affected/quarantined people.}
+            \resumeItem{Created an entire application using Python, Django and SQLite.}
+            \resumeItem{Designed and developed the UI of the application using HTML, CSS and Materializecss.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/sreejan774/Autosuggest}{Contact  List  Manager  With Autosuggestion Feature \ExternalLink}} $|$ \emph{HTML, CSS, JavaScript}}{Aug. 2020}
+          \resumeItemListStart
+            \resumeItem{Developed an application using Tries Data Structure to suggest the auto completion of the contact list. }
+            \resumeItem{Designed and developed the UI of the application using HTML, CSS and Bootstrap Framework.}
+            \resumeItem{The goal of the project was to get a better understanding and demonstrate the working of tries.}
+          \resumeItemListEnd
+          \vspace{ 2 mm}
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Core Programming}{: Data Structures, Algorithms (C++) } \\
+     \textbf{Development Skills}{: C++, Python, Django, HTML, CSS, SQL} \\
+    }}
+ \end{itemize}
+ %\vspace{-16pt}
+\vspace{-10 pt}
+%----------------CERTIFICATIONS--------------------
+\section{CERTIFICATIONS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\href{https://drive.google.com/file/d/1nFpO9oKQLppBSnweKx0sTrmR_hblc56w/view}{LaunchPad Data Structures and Algorithms \ExternalLink}}{: Coding Blocks (2019)} \\
+     \textbf{\href{https://www.coursera.org/account/accomplishments/verify/N2AHRNCBTVJP?utm_campaign=sharing_cta&utm_content=cert_image&utm_medium=certificate&utm_product=course&utm_source=mobile}{Python \ExternalLink}}{: Coursera (2020) } \\
+     \textbf{\href{https://ninjasfiles.s3.amazonaws.com/certificate1005234de2181f60cfd6e79ac0370b2e5df08df.pdf}{Competitive Programming in C++ \ExternalLink}}{: Coding Ninjas (2020) } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
+
