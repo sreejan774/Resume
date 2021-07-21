@@ -1,2 +1,2 @@
 ## Resume 
-Last Updated : 11 July 2021
+Last Updated : 21 July 2021
